@@ -1,0 +1,45 @@
+.footer{
+    background-color: #DDD0C8;
+    padding: 40px 0 30px;
+    .fRow{
+        gap: 15px 30px;
+        .fNav{
+            &:first-child{
+                width: 100%;
+                max-width: 340px;
+            }
+            width: 160px;
+            flex: auto;
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-top: 10px;
+                    a:hover{
+                        color: #323232;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &.fSocial{
+                a{
+                    display: inline-block;
+                    margin: 10px 15px 0 0;
+                    font-size: 26px;
+                    &:hover{
+                        color: #323232;
+                    }
+                }
+            }
+        }
+    }
+    .cpyrght{
+        margin-top: 40px;
+        padding-top: 30px;
+        text-align: center;
+        border-top: 1px solid #323232;
+    }
+}

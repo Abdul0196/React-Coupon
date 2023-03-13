@@ -1,0 +1,131 @@
+.cpn{
+    max-width: 275px;
+    width: 250px;
+    height: fit-content;
+    flex: auto;
+    text-align: center;
+    background-color: #DDD0C8;
+    border-radius: 4px;
+    >div{
+        padding: 20px;
+        &:nth-of-type(1){
+            border-bottom: 2px dashed #323232;
+            position: relative;
+            .cpnimg{
+                width: 100%;
+                background-color: #fff;
+                height: 80px;
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tleanc{
+                color: #323232;
+            }
+            h3{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                height: 47px;
+            }
+            .lftcrcl{
+                position: absolute;
+                left: -20px;
+                bottom: -15px;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background-color: #fff;
+            }
+            .rytcrcl{
+                position: absolute;
+                right: -20px;
+                bottom: -15px;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background-color: #fff;
+            }
+        }
+        &:nth-of-type(2){
+            .cdebtn{
+                position: relative;
+                max-width: 170px;
+                margin: 0 auto 20px;
+                width: 100%;
+                height: 40px;
+                cursor: pointer;
+                .bck{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border: 2px dashed #323232;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    font-weight: 600;
+                    padding: 0 10px;
+                }
+                .frnt{
+                    border-radius: 4px;
+                    // background-color: #323232;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 140px;
+                        height: 100%;
+                        background-color: #323232;
+                        border-radius: 4px;
+                        z-index: -1;
+                        transition: .3s all ease;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 10px;
+                        right: 11px;
+                        background: linear-gradient(135deg, #e6e6e6 51%, transparent 0);
+                        width: 38px;
+                        border-radius: 4px 0 4px 4px;
+                        height: 38px;
+                        transform: rotate(-45deg);
+                        transition: .2s all ease;
+                    }
+                }
+                &:hover{
+                    transition: .3s all ease;
+                    .frnt{
+                        &::before{
+                            width: 136px;
+                            border-radius: 4px 2px 22px 4px;
+                            transition: .2s all ease;
+                        }
+                        &::after{
+                            transition: .3s all ease;
+                            right: 17px;
+                            transform: rotate(-39deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

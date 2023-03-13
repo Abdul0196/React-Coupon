@@ -1,0 +1,107 @@
+@use "../icomoon/style.scss";
+@use "../components/navbar.scss";
+@use "../components/footer.scss";
+
+@font-face {
+    font-family: 'Rambla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Rambla Regular"), local("Rambla-Regular"), url(../../../fonts/rambla-regular.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+@font-face {
+    font-family: 'Rambla';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Rambla Bold"), local("Rambla-Bold"), url(../../../fonts/rambla-bold.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+body{
+    font-size: 16px;
+    color: #323232;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rambla";
+}
+img{
+    max-width: 100%;
+    object-fit: contain;
+}
+a{
+    display: block;
+    transition: 0.3s all ease;
+    color: #323232;
+    text-decoration: none;
+}
+a:hover{
+    color: #DDD0C8;
+    transition: 0.3s all ease;
+}
+main{
+    padding: 40px 0;
+}
+.inldr{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success{
+    background-color: green;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 auto 15px;
+    width: fit-content;
+}
+.error{
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 auto 15px;
+    width: fit-content;
+}
+.loader{
+    margin: auto;
+    display: flex;
+}
+.cthdr{
+    height: 300px;
+    background-color: #DDD0C8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -40px 0 40px;
+}
+.cthdr h1{
+    font-size: 48px;
+    color: #000;
+    text-shadow: 2px 2px 1px #c4c4c4;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.j-sb{
+    justify-content: space-between;
+}
+input,button,textarea,select{
+    border: none;
+    outline: none;
+    font-size: 16px;
+}

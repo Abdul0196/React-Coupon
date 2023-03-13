@@ -1,0 +1,27 @@
+@use "../components/newsletter.scss";
+
+.cts{
+    justify-content: center;
+    gap: 20px;
+    a{
+        flex: 1;
+        max-width: 200px;
+        text-align: center;
+        img{
+            max-width: 150px;
+            box-shadow: 0 0 8px #DDD0C8;
+            transition: 0.3s all;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        &:hover{
+            color: #323232;
+            img{
+                box-shadow: 0 0 14px #DDD0C8;
+                transform: scale(1.005);
+                transition: 0.3s all;
+            }
+        }
+    }
+}

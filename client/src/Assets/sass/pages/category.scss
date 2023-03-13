@@ -1,0 +1,32 @@
+@use "../components/breadcrumb.scss";
+@use "../components/coupon.scss";
+@use "../components/widgets.scss";
+@use "../components/newsletter.scss";
+
+.ct {
+    .cpnsbx{
+        .lftstr{
+            .pgnav{
+                width: 100%;
+                gap: 5px;
+                justify-content: center;
+                span{
+                    padding: 3px 6px;
+                    min-width: 20px;
+                    text-align: center;
+                    background-color: #323232;
+                    color: #fff;
+                    border-radius: 3px;
+                    &:hover{
+                        background-color: #ddd0c8;
+                        color: #323232;
+                    }
+                    &.active{
+                        background-color: #ddd0c8;
+                        color: #323232;
+                    }
+                }
+            }
+        }
+    }
+}

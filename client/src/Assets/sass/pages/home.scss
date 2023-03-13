@@ -1,0 +1,68 @@
+@use "../slick/slick-theme.scss";
+@use "../slick/slick.scss";
+@use "../components/coupon.scss";
+@use "../components/newsletter.scss";
+
+.tleh2{
+    font-size: 40px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    &::before{
+        content: "";
+        height: 2px;
+        border: 1px solid #323232;
+        border-left: none;
+        border-right: none;
+        margin-right: 10px;
+        flex: 1;
+    }
+    &::after{
+        content: "";
+        height: 2px;
+        border: 1px solid #323232;
+        border-left: none;
+        border-right: none;
+        margin-left: 10px;
+        flex: 1;
+    }
+}
+.hdr{
+    text-align: center;
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 20px;
+        margin: 10px 0 20px;
+    }
+    .d-flex{
+        justify-content: center;
+        gap: 5px 20px;
+        margin-bottom: 20px;
+    }
+    .slick-slide>div{
+        padding: 15px;
+    }
+    .slds{
+        padding: 15px;
+        box-shadow: 0 0 7px -1px #ddd0c8;
+        background-color: #fff;
+        border-radius: 4px;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+    }
+}
+.ftsc{
+    @extend .d-flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px !important;
+}

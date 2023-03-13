@@ -1,0 +1,37 @@
+@use "../components/breadcrumb.scss";
+@use "../components/coupon.scss";
+@use "../components/widgets.scss";
+@use "../components/newsletter.scss";
+
+.stlebx{
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 40px;
+    img{
+        max-width: 200px;
+        box-shadow: 0 0 8px #DDD0C8;
+        border: 100%;
+    }
+    .cntst{
+        flex: 1;
+        h1{
+            margin: 10px 0 5px;
+            font-size: 32px;
+            text-transform: capitalize;
+        }
+        .rating{
+            display: flex;
+            span{
+                padding-right: 4px;
+            }
+        }
+    }
+}
+.cpnsbx{
+    gap: 20px;
+    align-items: flex-start;
+    .lftstr{
+        width: 70%;
+        gap: 20px;
+    }
+}

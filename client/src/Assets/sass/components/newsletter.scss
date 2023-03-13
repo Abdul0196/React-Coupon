@@ -1,0 +1,52 @@
+.nwsbx{
+    background-image: url(../../../../public/images/nwsbg.svg);
+    background-repeat: no-repeat;
+    background-size: 440px;
+    background-position: left;
+    padding: 40px 20px;
+    margin: 40px auto 0;
+    .nwsltr{
+        max-width: 660px;
+        margin-left: auto;
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        .subsbx{
+            position: relative;
+            height: 45px;
+            max-width: 480px;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 8px #DDD0C8;
+            border-radius: 5px;
+            button{
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-radius: 0 5px 5px 0;
+                width: 100px;
+                background-color: #DDD0C8;
+                height: 100%;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            input{
+                border-radius: 5px 0 0 5px;
+                padding: 0 100px 0 10px;
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+        span{
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}

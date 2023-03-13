@@ -1,0 +1,41 @@
+.addata{
+    input,select{
+        border: 1px solid #bbb;
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        max-width: 320px;
+        margin: 0 auto 5px;
+        color: #323232;
+        &::placeholder{
+            color: #bbb;
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    .d-flex{
+        max-width: 320px;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto 20px;
+        button{
+            background-color: #DDD0C8;
+            margin: 0;
+            color: #323232;
+        }
+    }
+    button{
+        cursor: pointer;
+        margin: 15px auto 0;
+        display: block;
+        width: 120px;
+        border-radius: 5px;
+        background-color: #323232;
+        padding: 10px 20px;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+    }
+}
